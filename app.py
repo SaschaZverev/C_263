@@ -18,7 +18,7 @@ def visitors():
 	counter_write_file.write(str(visitors_count))
 	counter_write_file.close()
 
-	return render_template("index.html", image = corona_data, count = visitors_count)
+	return render_template("index.html", count = visitors_count)
 
 @app.route('/', methods = ['POST'])
 def covid_stats():
